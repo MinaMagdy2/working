@@ -151,6 +151,16 @@ body{
                     text-align: end;
                     padding-right: 17px;
                     padding-bottom: 5px;
+                    
+                }
+                .container {
+                    display: flex;
+                    justify-content: space-between; /* لنشر العناصر على جانبي الحاوية */
+                    padding-top: 110px; /* لتطبيق المسافة العلوية */
+                }
+                .container2 {
+                    display: flex;
+                    justify-content: space-between; /* لنشر العناصر على جانبي الحاوية */
                 }
                 .sec{
                     padding-left: 15px;
