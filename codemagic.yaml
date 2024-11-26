@@ -2,11 +2,16 @@ workflows:
   ios-release:
     name: iOS Release
     platform: ios
-    flutter: false  # إذا كنت تستخدم Cordova أو Ionic بدلًا من Flutter
-    ionic:
-      enabled: true
-    ios:
-      xcode: "12.5"
-      export_method: app-store
+    macos: true
+    xcode: "12.5"  # تحديد إصدار Xcode المناسب
+    scripts:
+      - name: Install Dependencies
+        script: |
+          npm install -g cordova
+          npm install -g ionic
+          npm install
+      - name: Build Cordova Project
+        script: |
+          ionic cordova build ios --prod --release
     artifacts:
-      - build/ios/iphoneos/*.ipa  # المسار الذي سيتم حفظ الـ IPA فيه بعد البناء
+      - build/platforms/ios/build/device/*.ipa  # المسار الذي سيتم حفظ الـ IPA فيه بعد البناء
