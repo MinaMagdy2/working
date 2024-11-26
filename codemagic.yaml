@@ -1,15 +1,17 @@
-vworkflows:
+workflows:
   ios-release:
     name: iOS Release
-    ios:
-      version: "12.5"  # تحديد إصدار iOS
+    max_build_duration: 60 # الحد الأقصى لوقت البناء (دقائق)
+    environment:
+      vars:
+        BUILD_TYPE: "Release"
     scripts:
       - name: Install Dependencies
         script: |
           npm install -g cordova
           npm install -g ionic
           npm install
-      - name: Build Cordova Project
+      - name: Build iOS app
         script: |
           ionic cordova build ios --prod --release
     artifacts:
