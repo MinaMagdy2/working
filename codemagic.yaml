@@ -11,8 +11,8 @@ workflows:
           npm install -g cordova
           npm install -g ionic
           npm install
-      - name: Build iOS app
+      - name: Check for errors
         script: |
-          ionic cordova build ios --prod --release
+          tail -n 20 /var/log/codemagic.log
     artifacts:
       - build/platforms/ios/build/device/*.ipa  # المسار الذي سيتم حفظ الـ IPA فيه بعد البناء
