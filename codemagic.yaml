@@ -1,9 +1,8 @@
-workflows:
+vworkflows:
   ios-release:
     name: iOS Release
-    platform: ios
-    macos: true
-    xcode: "12.5"  # تحديد إصدار Xcode المناسب
+    ios:
+      version: "12.5"  # تحديد إصدار iOS
     scripts:
       - name: Install Dependencies
         script: |
