@@ -1,0 +1,12 @@
+workflows:
+  ios-release:
+    name: iOS Release
+    platform: ios
+    flutter: false  # إذا كنت تستخدم Cordova أو Ionic بدلًا من Flutter
+    ionic:
+      enabled: true
+    ios:
+      xcode: "12.5"
+      export_method: app-store
+    artifacts:
+      - build/ios/iphoneos/*.ipa  # المسار الذي سيتم حفظ الـ IPA فيه بعد البناء
