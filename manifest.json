@@ -1,0 +1,16 @@
+{
+    "name": "اسم تطبيقك",
+    "short_name": "الاسم المختصر للتطبيق",
+    "description": "وصف قصير للتطبيق",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#3367D6",
+    "icons": [
+      {
+        "src": "/icon-72x72.png",
+        "sizes": "72x72",
+        "type": "image/png"
+      }
+    ]
+  }
