@@ -32,19 +32,22 @@
 
   </section>
   <script>
-        // بيانات تسجيل الدخول المحددة
-        const validPassword = "101010";
+    // كلمة المرور الصحيحة
+    const validPassword = "101010";
 
-        function login() {
-            const password = document.getElementById("password").value;
+    function login() {
+        // الحصول على قيمة كلمة المرور
+        const password = document.getElementById("password").value;
 
-            if (password === validPassword) {
-                window.location.href = "home.html"; // صفحة الوجهة بعد تسجيل الدخول
-            } else {
-                alert("Invalid Email or Password");
-            }
+        // التحقق من كلمة المرور
+        if (password === validPassword) {
+            window.location.href = "home.html"; // الانتقال إلى الصفحة المطلوبة
+        } else {
+            alert("Invalid Password"); // رسالة خطأ عند الإدخال الخاطئ
         }
-    </script>
+    }
+</script>
+
   
 <!-- partial -->
   
