@@ -23,13 +23,27 @@
       <label for="password" style="font-size:45px;">Password</label>
       <div class="sec-2">
         <ion-icon name="lock-closed-outline"></ion-icon>
-        <input class="pas" type="password" name="password" placeholder="············"/>
+        <input id="password" class="pas" type="password" name="password"  placeholder="············"/>
       </div>
     </div>
-    <button class="login">Login </button>
+    <button onclick="login()" class="login">Login </button>
   </div>
 
   </section>
+  <script>
+        // بيانات تسجيل الدخول المحددة
+        const validPassword = "101010";
+
+        function login() {
+            const password = document.getElementById("password").value;
+
+            if (email === validEmail && password === validPassword) {
+                window.location.href = "welcome.html"; // صفحة الوجهة بعد تسجيل الدخول
+            } else {
+                alert("Invalid Email or Password");
+            }
+        }
+    </script>
   
 <!-- partial -->
   
