@@ -124,10 +124,12 @@ font-size: 49px;}
 }
 input {
   font-size: 16px;
-  outline: none; /* إزالة حدود الزوم */
-  -webkit-text-size-adjust: 100%; /* منع التعديل التلقائي لحجم النص */
-  box-sizing: border-box; /* يجعل الحواف واضحة */
+  width: 100%; /* عرض كامل ليتناسب مع الشاشة */
+  padding: 10px; /* مساحة داخلية للحقل */
+  border: 1px solid #ccc; /* حواف واضحة */
+  border-radius: 5px; /* حواف مستديرة */
 }
+
 
 
 button {
