@@ -1,6 +1,5 @@
 * {
   font-family: "Poppins";
-  font-size: xx-large;
 }
 
 body {
@@ -13,27 +12,28 @@ body {
   justify-content: center;
   align-items: center;
   background: #1a2439;
-    touch-action: none; /* تعطيل سلوك اللمس الافتراضي */
 }
-
 .screen-1 {
   background: #f1f7fe;
   padding: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
   display: flex;
   flex-direction: column;
-  border-radius: 30px;
+  border-radius: 15px;
   gap: 2em;
-  width: 80%;
-  margin-left: 26px;
+  width: 76%;
+  margin-left: 10px;
+  padding-top: 19px;
+  padding-bottom: 19px;-left: 26px;
 }
  .logo {
-  width: 300px;
-  height: 320px;
+  width: 152px;
+  height: 144px;
   position: relative;
-  left: 34%;
+  left: 30%;
   border-radius: 35px;
-box-shadow:  5px 5px 10px #d9d9d9,
-             -5px -5px 10px #e7e7e7;
+  box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #e7e7e7;
 }
 .screen-1 .email {
   background: white;
@@ -107,12 +107,14 @@ box-shadow:  5px 5px 10px #d9d9d9,
   margin-right: -5em;
 }
 .screen-1 .login {
-  padding: 1em;
-  background: #3e4684;
-  color: white;
-  border: none;
-  border-radius: 30px;
-font-size: 49px;}
+  
+    padding: 1em;
+    background: #3e4684;
+    color: white;
+    border: none;
+    border-radius: 30px;
+  }
+
 .screen-1 .footer {
   display: flex;
   font-size: 0.7em;
@@ -123,13 +125,6 @@ font-size: 49px;}
 .screen-1 .footer span {
   cursor: pointer;
 }
-input {
-  font-size: 16px; /* لتجنب الزوم الافتراضي */
-  touch-action: none; /* تعطيل سلوك اللمس الافتراضي */
-}
-
-
-
 
 button {
   cursor: pointer;
